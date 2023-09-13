@@ -1,21 +1,51 @@
-/* line 28, scss/main.scss */
+/* line 2, scss/_menu.scss */
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 1.5s ease-out; }
+  /* line 10, scss/_menu.scss */
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    transition: all 1.5s ease-out; }
+  /* line 19, scss/_menu.scss */
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    /* line 24, scss/_menu.scss */
+    .menu-btn.close .btn-line:nth-child(1) {
+      background: #f5001d;
+      transform: rotate(45deg) translate(5px, 5px); }
+    /* line 31, scss/_menu.scss */
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    /* line 36, scss/_menu.scss */
+    .menu-btn.close .btn-line:nth-child(3) {
+      background: #f5001d;
+      transform: rotate(-45deg) translate(6px, -6px); }
+
+/* line 5, scss/main.scss */
 * {
   box-sizing: border-box; }
 
-/* line 32, scss/main.scss */
+/* line 9, scss/main.scss */
 body {
   background: #123;
-  color: #6ef;
+  color: #efefef;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5; }
-  /* line 11, scss/main.scss */
+  /* line 12, scss/_config.scss */
   body#bg-img {
     background: url(../img/Xenoblade_Chronicles_3_Wallpaper_3840x2160-Great_Cotte_Falls.jpg);
     background-attachment: fixed;
     background-size: cover; }
-    /* line 15, scss/main.scss */
+    /* line 16, scss/_config.scss */
     body#bg-img:after {
       content: "";
       position: absolute;
@@ -26,57 +56,56 @@ body {
       z-index: -1;
       background: rgba(17, 34, 51, 0.7); }
 
-/* line 43, scss/main.scss */
+/* line 20, scss/main.scss */
 h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
-  /* line 48, scss/main.scss */
+  font-weight: 400;
+  text-align: center; }
+  /* line 26, scss/main.scss */
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem; }
-  /* line 51, scss/main.scss */
-  h1.sm_heading,
-  h2.sm_heading,
-  h3.sm_heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(20, 39, 59, 0.5); }
 
-/* line 58, scss/main.scss */
+/* line 31, scss/main.scss */
 a {
   color: #fff;
   text-decoration: none; }
 
-/* line 62, scss/main.scss */
+/* line 35, scss/main.scss */
 header {
   position: fixed;
   z-index: 2;
   width: 100%; }
+  /* line 41, scss/main.scss */
+  header .menu-nav a:hover {
+    color: #f5001d;
+    transition: all 1.5s ease-out; }
 
-/* line 68, scss/main.scss */
+/* line 50, scss/main.scss */
 .text-secondary {
-  color: #e56; }
+  color: #f5001d; }
 
-/* line 71, scss/main.scss */
+/* line 53, scss/main.scss */
 main {
   padding: 4rem;
   height: 100%; }
-  /* line 75, scss/main.scss */
+  /* line 57, scss/main.scss */
   main .icons {
-    margin-top: 1rem; }
-    /* line 77, scss/main.scss */
+    margin-top: 10rem;
+    text-align: center; }
+    /* line 60, scss/main.scss */
     main .icons a {
       padding: 0.4rem; }
-      /* line 80, scss/main.scss */
+      /* line 63, scss/main.scss */
       main .icons a:hover {
-        color: #e56;
+        color: #f5001d;
         transition: all 1.5s ease-out; }
-  /* line 86, scss/main.scss */
+  /* line 69, scss/main.scss */
   main#home {
     overflow: hidden; }
-    /* line 88, scss/main.scss */
+    /* line 71, scss/main.scss */
     main#home h1 {
       margin-top: 20vh; }

@@ -1,30 +1,7 @@
-$primary-color: #123;
-$secondary-color: #e56;
-$show-home-image: true;
-$home-image: url(../img/Xenoblade_Chronicles_3_Wallpaper_3840x2160-Great_Cotte_Falls.jpg);
-$backgound-opacity: 0.7;
-@mixin easeOut{
-    transition: all 1.5s ease-out;
-}
-@mixin background{
-    @if $show-home-image{
-        &#bg-img{
-            background: $home-image;
-            background-attachment: fixed;
-            background-size: cover;
-            &:after{
-             content: "";
-             position: absolute;
-             top: 0;
-             right: 0;
-             width: 100%;
-             height: 100%;
-             z-index: -1;
-             background: rgba( $primary-color,$backgound-opacity);
-            }
-        }
-    }
-}
+@import 'config';
+@import "menu";
+
+
 *{
     box-sizing: border-box;
 }
@@ -32,10 +9,10 @@ $backgound-opacity: 0.7;
 body{
     @include background();
     background: $primary-color;
-    color: #6ef;
+    color: rgb(239, 239, 239);
     height: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
 }
 
@@ -43,15 +20,11 @@ body{
 h1,
 h2,
 h3{
-    margin:0;
+    margin: 0;
     font-weight: 400;
+    text-align:center;
     &.lg-heading{
         font-size: 6rem;
-    }
-    &.sm_heading{
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, $amount: 2),0.5);
     }
 }
 
@@ -63,6 +36,15 @@ header{
     position: fixed;
     z-index: 2;
     width: 100%;
+    .menu-nav{
+        a{
+            &:hover{
+               color: $secondary-color;
+              @include easeOut();
+            }
+        }
+    }
+    
 }
 
 .text-secondary{
@@ -73,7 +55,8 @@ main{
     height: 100%;
 
     .icons{
-        margin-top: 1rem;
+        margin-top: 10rem;
+        text-align:center;
         a{
             padding: 0.4rem;
 
