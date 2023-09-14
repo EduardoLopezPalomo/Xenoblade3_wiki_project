@@ -26,6 +26,15 @@ $backgound-opacity: 0.7;
         }
     }
 }
+//set text color
+@function setTextColor($color){
+    @if(lightness($color) > 40){
+        @return #000;
+    } @else{
+        @return #fff;
+    }
+}
+
 
 // media quety mix
 @mixin mediaSm{
