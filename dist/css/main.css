@@ -243,28 +243,51 @@ main {
       border-color: #f5001d;
       transition: all 1.5s ease-out; }
 
-/* line 130, scss/main.scss */
+/* line 129, scss/main.scss */
+.music-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  /* line 136, scss/main.scss */
+  .music-info div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 1.5s ease-out; }
+    /* line 143, scss/main.scss */
+    .music-info div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #f5001d;
+      color: #000; }
+      /* line 147, scss/main.scss */
+      .music-info div:hover span {
+        color: #000; }
+
+/* line 156, scss/main.scss */
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  /* line 135, scss/main.scss */
+  /* line 161, scss/main.scss */
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #f5001d;
     color: #000; }
 
-/* line 141, scss/main.scss */
+/* line 167, scss/main.scss */
 .btn-dark {
   background: black;
   color: #fff; }
 
-/* line 147, scss/main.scss */
+/* line 173, scss/main.scss */
 .btn-light {
   background: #73a2d0;
   color: #333; }
 
-/* line 153, scss/main.scss */
+/* line 179, scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;
