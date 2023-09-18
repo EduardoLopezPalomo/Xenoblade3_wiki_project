@@ -71,7 +71,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/Xenoblade_Chronicles_3_Wallpaper_3840x2160-Rae-Bel_Tableland.jpg");
+      background: url("../img/Uroboro-symbol.png");
       border-radius: 50%;
       border: solid 3px #f5001d; }
   /* line 100, scss/_menu.scss */
@@ -129,7 +129,7 @@ body {
   line-height: 1.5; }
   /* line 12, scss/_config.scss */
   body#bg-img {
-    background: url(../img/Xenoblade_Chronicles_3_Wallpaper_3840x2160-Great_Cotte_Falls.jpg);
+    background: url(../img/xenoblade3-inicio.jpg);
     background-attachment: fixed;
     background-size: cover; }
     /* line 16, scss/_config.scss */
@@ -197,97 +197,136 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-/* line 78, scss/main.scss */
+/* line 79, scss/main.scss */
 .caracters-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
-  /* line 86, scss/main.scss */
-  .caracters-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: #f5001d 3px solid; }
-  /* line 92, scss/main.scss */
-  .caracters-info .bio {
+  grid-template-areas: "bioimage bio";
+  grid-template-columns: repeat(2, 1fr); }
+  /* line 85, scss/main.scss */
+  .caracters-info .bio-Noah {
     grid-area: bio;
     font-size: 1.5rem; }
-  /* line 96, scss/main.scss */
-  .caracters-info .job-1 {
-    grid-area: job1; }
+    /* line 88, scss/main.scss */
+    .caracters-info .bio-Noah.hide {
+      opacity: 0; }
+  /* line 92, scss/main.scss */
+  .caracters-info .bio-Mio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 95, scss/main.scss */
+    .caracters-info .bio-Mio.hide {
+      opacity: 0; }
   /* line 99, scss/main.scss */
-  .caracters-info .job-2 {
-    grid-area: job2; }
-  /* line 102, scss/main.scss */
-  .caracters-info .job-3 {
-    grid-area: job3; }
-  /* line 105, scss/main.scss */
-  .caracters-info .job {
-    background: #172f46;
-    padding: 0.5rem;
-    border-bottom: #f5001d 5px solid; }
+  .caracters-info .bio-Sena {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 102, scss/main.scss */
+    .caracters-info .bio-Sena.hide {
+      opacity: 0; }
+  /* line 106, scss/main.scss */
+  .caracters-info .bio-Lanz {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 109, scss/main.scss */
+    .caracters-info .bio-Lanz.hide {
+      opacity: 0; }
+  /* line 113, scss/main.scss */
+  .caracters-info .bio-Euine {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 116, scss/main.scss */
+    .caracters-info .bio-Euine.hide {
+      opacity: 0; }
+  /* line 120, scss/main.scss */
+  .caracters-info .bio-Taion {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 123, scss/main.scss */
+    .caracters-info .bio-Taion.hide {
+      opacity: 0; }
 
-/* line 113, scss/main.scss */
+/* line 128, scss/main.scss */
+section {
+  display: flex;
+  height: 500px;
+  width: 650px; }
+
+/* line 133, scss/main.scss */
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease; }
+
+/* line 140, scss/main.scss */
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%); }
+
+/* line 148, scss/main.scss */
 .locations-info {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
-  /* line 117, scss/main.scss */
+  /* line 152, scss/main.scss */
   .locations-info img {
     width: 100%;
     border: 3px #fff solid; }
-    /* line 121, scss/main.scss */
+    /* line 156, scss/main.scss */
     .locations-info img:hover {
       opacity: 0.5;
       border-color: #f5001d;
       transition: all 1.5s ease-out; }
 
-/* line 129, scss/main.scss */
+/* line 164, scss/main.scss */
 .music-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
-  /* line 136, scss/main.scss */
+  /* line 171, scss/main.scss */
   .music-info div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 1.5s ease-out; }
-    /* line 143, scss/main.scss */
+    /* line 178, scss/main.scss */
     .music-info div:hover {
       padding: 0.5rem 1.5rem;
       background: #f5001d;
       color: #000; }
-      /* line 147, scss/main.scss */
+      /* line 182, scss/main.scss */
       .music-info div:hover span {
         color: #000; }
 
-/* line 156, scss/main.scss */
+/* line 191, scss/main.scss */
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  /* line 161, scss/main.scss */
+  /* line 196, scss/main.scss */
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #f5001d;
     color: #000; }
 
-/* line 167, scss/main.scss */
+/* line 202, scss/main.scss */
 .btn-dark {
   background: black;
   color: #fff; }
 
-/* line 173, scss/main.scss */
+/* line 208, scss/main.scss */
 .btn-light {
   background: #73a2d0;
   color: #333; }
 
-/* line 179, scss/main.scss */
+/* line 214, scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;

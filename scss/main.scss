@@ -75,38 +75,73 @@ main{
     }
 }
 
+
 .caracters-info {
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-    grid-template-columns: repeat(3,1fr);
-
-    .bio-image{
-        grid-area: bioimage;
-        margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
-    }
-    .bio {
+    "bioimage bio";
+    grid-template-columns: repeat(2,1fr);
+    .bio-Noah{
         grid-area: bio;
         font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
     }
-    .job-1{
-        grid-area: job1;
+    .bio-Mio{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
     }
-    .job-2{
-        grid-area: job2;
+    .bio-Sena{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
     }
-    .job-3{
-        grid-area: job3;
+    .bio-Lanz{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
     }
-    .job{
-        background: lighten($color: $primary-color, $amount: 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
+    .bio-Euine{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
     }
+    .bio-Taion{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
+    }
+}
+section{
+    display: flex;
+    height: 500px;
+    width: 650px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 //locations
