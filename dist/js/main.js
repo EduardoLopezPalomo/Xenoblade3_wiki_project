@@ -7,7 +7,7 @@ const navItems = document.querySelectorAll(".nav-item");
 
 //set initial state of menu
 let showMenu = false;
-
+menuBtn.addEventListener("click", toggleMenu);
 //select img of characters
 const imgNoah = document.querySelector(".bio-image-Noah");
 const imgMio = document.querySelector(".bio-image-Mio");
@@ -30,7 +30,6 @@ imgSena.addEventListener("click",BioCharacterSena);
 imgLanz.addEventListener("click",BioCharacterLanz);
 imgEuine.addEventListener("click",BioCharacterEuine);
 imgTaion.addEventListener("click",BioCharacterTaion);
-menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu(){
     if(!showMenu){
