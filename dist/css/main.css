@@ -246,13 +246,63 @@ main {
     .caracters-info .bio-Taion.hide {
       opacity: 0; }
 
-/* line 128, scss/main.scss */
+/* line 130, scss/main.scss */
+.villains-info {
+  margin-top: 100px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bio bioimage";
+  grid-template-columns: repeat(2, 1fr); }
+  /* line 137, scss/main.scss */
+  .villains-info .bio-Z {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 140, scss/main.scss */
+    .villains-info .bio-Z.hide {
+      opacity: 0; }
+  /* line 144, scss/main.scss */
+  .villains-info .bio-N {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 147, scss/main.scss */
+    .villains-info .bio-N.hide {
+      opacity: 0; }
+  /* line 151, scss/main.scss */
+  .villains-info .bio-M {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 154, scss/main.scss */
+    .villains-info .bio-M.hide {
+      opacity: 0; }
+  /* line 158, scss/main.scss */
+  .villains-info .bio-J {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 161, scss/main.scss */
+    .villains-info .bio-J.hide {
+      opacity: 0; }
+  /* line 165, scss/main.scss */
+  .villains-info .bio-X {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 168, scss/main.scss */
+    .villains-info .bio-X.hide {
+      opacity: 0; }
+  /* line 172, scss/main.scss */
+  .villains-info .bio-Y {
+    grid-area: bio;
+    font-size: 1.5rem; }
+    /* line 175, scss/main.scss */
+    .villains-info .bio-Y.hide {
+      opacity: 0; }
+
+/* line 181, scss/main.scss */
 section {
   display: flex;
   height: 500px;
   width: 650px; }
 
-/* line 133, scss/main.scss */
+/* line 186, scss/main.scss */
 section img {
   width: 0px;
   flex-grow: 1;
@@ -260,73 +310,73 @@ section img {
   opacity: 0.8;
   transition: 0.5s ease; }
 
-/* line 140, scss/main.scss */
+/* line 193, scss/main.scss */
 section img:hover {
   cursor: crosshair;
   width: 300px;
   opacity: 1;
   filter: contrast(120%); }
 
-/* line 148, scss/main.scss */
+/* line 201, scss/main.scss */
 .locations-info {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
-  /* line 152, scss/main.scss */
+  /* line 205, scss/main.scss */
   .locations-info img {
     width: 100%;
     border: 3px #fff solid; }
-    /* line 156, scss/main.scss */
+    /* line 209, scss/main.scss */
     .locations-info img:hover {
       opacity: 0.5;
       border-color: #f5001d;
       transition: all 1.5s ease-out; }
 
-/* line 164, scss/main.scss */
+/* line 217, scss/main.scss */
 .music-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
-  /* line 171, scss/main.scss */
+  /* line 224, scss/main.scss */
   .music-info div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 1.5s ease-out; }
-    /* line 178, scss/main.scss */
+    /* line 231, scss/main.scss */
     .music-info div:hover {
       padding: 0.5rem 1.5rem;
       background: #f5001d;
       color: #000; }
-      /* line 182, scss/main.scss */
+      /* line 235, scss/main.scss */
       .music-info div:hover span {
         color: #000; }
 
-/* line 191, scss/main.scss */
+/* line 244, scss/main.scss */
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  /* line 196, scss/main.scss */
+  /* line 249, scss/main.scss */
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #f5001d;
     color: #000; }
 
-/* line 202, scss/main.scss */
+/* line 255, scss/main.scss */
 .btn-dark {
   background: black;
   color: #fff; }
 
-/* line 208, scss/main.scss */
+/* line 261, scss/main.scss */
 .btn-light {
   background: #73a2d0;
   color: #333; }
 
-/* line 214, scss/main.scss */
+/* line 267, scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;

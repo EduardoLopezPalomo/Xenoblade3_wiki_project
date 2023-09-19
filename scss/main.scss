@@ -74,7 +74,7 @@ main{
         }
     }
 }
-
+ //heroes characters
 
 .caracters-info {
     display: grid;
@@ -125,6 +125,59 @@ main{
         }
     }
 }
+
+//villains characters
+.villains-info {
+    margin-top: 100px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    "bio bioimage";
+    grid-template-columns: repeat(2,1fr);
+    .bio-Z{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
+    }
+    .bio-N{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
+    }
+    .bio-M{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
+    }
+    .bio-J{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
+    }
+    .bio-X{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
+    }
+    .bio-Y{
+        grid-area: bio;
+        font-size: 1.5rem;
+        &.hide{
+            opacity: 0;
+        }
+    }
+}
+
 section{
     display: flex;
     height: 500px;

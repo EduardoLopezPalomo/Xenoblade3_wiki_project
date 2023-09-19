@@ -15,6 +15,13 @@ const imgSena = document.querySelector(".bio-image-Sena");
 const imgLanz = document.querySelector(".bio-image-Lanz");
 const imgEuine = document.querySelector(".bio-image-Euine");
 const imgTaion = document.querySelector(".bio-image-Taion");
+
+const imgZ = document.querySelector(".bio-image-Z");
+const imgN = document.querySelector(".bio-image-N");
+const imgM = document.querySelector(".bio-image-M");
+const imgJ = document.querySelector(".bio-image-J");
+const imgX = document.querySelector(".bio-image-X");
+const imgY = document.querySelector(".bio-image-Y");
 //select bio of characters
 const NoahBio = document.querySelector(".bio-Noah");
 const MioBio = document.querySelector(".bio-Mio");
@@ -23,6 +30,13 @@ const LanzBio = document.querySelector(".bio-Lanz");
 const EuineBio = document.querySelector(".bio-Euine");
 const TaionBio = document.querySelector(".bio-Taion");
 
+const ZBIO = document.querySelector(".bio-Z");
+const NBIO = document.querySelector(".bio-N");
+const MBIO = document.querySelector(".bio-M");
+const JBIO = document.querySelector(".bio-J");
+const XBIO = document.querySelector(".bio-X");
+const YBIO = document.querySelector(".bio-Y");
+
 
 imgNoah.addEventListener("click",BioCharacterNoah);
 imgMio.addEventListener("click",BioCharacterMio);
@@ -30,6 +44,13 @@ imgSena.addEventListener("click",BioCharacterSena);
 imgLanz.addEventListener("click",BioCharacterLanz);
 imgEuine.addEventListener("click",BioCharacterEuine);
 imgTaion.addEventListener("click",BioCharacterTaion);
+
+imgZ.addEventListener("click", BioCharacterZ);
+imgN.addEventListener("click",BioCharacterN);
+imgM.addEventListener("click",BioCharacterM);
+imgJ.addEventListener("click",BioCharacterJ);
+imgX.addEventListener("click",BioCharacterX);
+imgY.addEventListener("click",BioCharacterY);
 
 function toggleMenu(){
     if(!showMenu){
@@ -98,4 +119,54 @@ function BioCharacterTaion(){
     LanzBio.classList.add("hide");
     EuineBio.classList.add("hide");
     TaionBio.classList.remove("hide");
+}
+//villains
+
+function BioCharacterZ(){
+    ZBIO.classList.remove("hide");
+    NBIO.classList.add("hide");
+    MBIO.classList.add("hide");
+    JBIO.classList.add("hide");
+    YBIO.classList.add("hide");
+    XBIO.classList.add("hide");
+}
+function BioCharacterN(){
+    ZBIO.classList.add("hide");
+    NBIO.classList.remove("hide");
+    MBIO.classList.add("hide");
+    JBIO.classList.add("hide");
+    YBIO.classList.add("hide");
+    XBIO.classList.add("hide");
+}
+function BioCharacterM(){
+    ZBIO.classList.add("hide");
+    NBIO.classList.add("hide");
+    MBIO.classList.remove("hide");
+    JBIO.classList.add("hide");
+    YBIO.classList.add("hide");
+    XBIO.classList.add("hide");
+}
+function BioCharacterJ(){
+    ZBIO.classList.add("hide");
+    NBIO.classList.add("hide");
+    MBIO.classList.add("hide");
+    JBIO.classList.remove("hide");
+    YBIO.classList.add("hide");
+    XBIO.classList.add("hide");
+}
+function BioCharacterX(){
+    ZBIO.classList.add("hide");
+    NBIO.classList.add("hide");
+    MBIO.classList.add("hide");
+    JBIO.classList.add("hide");
+    YBIO.classList.add("hide");
+    XBIO.classList.remove("hide");
+}
+function BioCharacterY(){
+    ZBIO.classList.add("hide");
+    NBIO.classList.add("hide");
+    MBIO.classList.add("hide");
+    JBIO.classList.add("hide");
+    YBIO.classList.remove("hide");
+    XBIO.classList.add("hide");
 }
