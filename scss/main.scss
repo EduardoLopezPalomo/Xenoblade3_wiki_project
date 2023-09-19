@@ -27,6 +27,9 @@ h3{
     &.lg-heading{
         font-size: 6rem;
     }
+    &.sm-headings{
+        font-size: 2rem;
+    }
 }
 
 a{
@@ -213,6 +216,23 @@ section img:hover{
         }
     }
 }
+
+.region-info{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+    "image bio";
+    grid-template-columns: repeat(2,1fr);
+    .bio-region{
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+    img{
+        width: 100%;
+        border: 3px $secondary-color solid;
+    }
+}
+
 //music
 .music-info{
     display: flex;
