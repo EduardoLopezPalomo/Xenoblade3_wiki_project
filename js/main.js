@@ -38,12 +38,12 @@ playweightlife.addEventListener("click",()=>{
 
 
 //select img of characters
-const imgLanz = document.querySelector(".bio-image-Lanz");
-const imgEuine = document.querySelector(".bio-image-Euine");
-const imgTaion = document.querySelector(".bio-image-Taion");
 const imgNoah = document.querySelector(".bio-image-Noah");
 const imgMio = document.querySelector(".bio-image-Mio");
 const imgSena = document.querySelector(".bio-image-Sena");
+const imgLanz = document.querySelector(".bio-image-Lanz");
+const imgEuine = document.querySelector(".bio-image-Euine");
+const imgTaion = document.querySelector(".bio-image-Taion");
 
 
 const imgZ = document.querySelector(".bio-image-Z");
@@ -69,7 +69,14 @@ const YBIO = document.querySelector(".bio-Y");
 
 
 //function
-imgNoah.addEventListener("click",BioCharacterNoah);
+imgNoah.addEventListener("click",()=>{
+    NoahBio.classList.remove("hide");
+    MioBio.classList.add("hide");
+    SenaBio.classList.add("hide");
+    LanzBio.classList.add("hide");
+    EuineBio.classList.add("hide");
+    TaionBio.classList.add("hide");
+});
 imgMio.addEventListener("click",BioCharacterMio);
 imgSena.addEventListener("click",BioCharacterSena);
 imgLanz.addEventListener("click",BioCharacterLanz);
@@ -105,14 +112,6 @@ function toggleMenu(){
 }
 
 // heroes
-function BioCharacterNoah(){
-    NoahBio.classList.remove("hide");
-    MioBio.classList.add("hide");
-    SenaBio.classList.add("hide");
-    LanzBio.classList.add("hide");
-    EuineBio.classList.add("hide");
-    TaionBio.classList.add("hide");
-}
 function BioCharacterMio(){
     NoahBio.classList.add("hide");
     MioBio.classList.remove("hide");
