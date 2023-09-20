@@ -5,38 +5,6 @@ const menuNav = document.querySelector(".menu-nav");
 const menubranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 
-//set initial state of menu
-let showMenu = false;
-menuBtn.addEventListener("click", toggleMenu);
-
-//music
-
-let offseer = new Audio("./music/Off-seer.mp3");
-let LifeSentOn = new Audio("./music/A-life-sent-on.mp3");
-let WeightOfLife = new Audio("./music/The-Weight-of-life.mp3");
-
-const playoffseer = document.querySelector(".play-off-seer");
-const playAlifesenton = document.querySelector(".life-sent-on");
-const playweightlife = document.querySelector(".weigth-of-life");
-
-playoffseer.addEventListener("click",()=>{
-    offseer.play();
-    LifeSentOn.pause();
-    WeightOfLife.pause();
-})
-playAlifesenton.addEventListener("click",()=>{
-    LifeSentOn.play();
-    offseer.pause();
-    WeightOfLife.pause();
-})
-playweightlife.addEventListener("click",()=>{
-    WeightOfLife.play();
-    LifeSentOn.pause();
-    offseer.pause();
-})
-
-
-
 //select img of characters
 const imgNoah = document.querySelector(".bio-image-Noah");
 const imgMio = document.querySelector(".bio-image-Mio");
@@ -44,6 +12,7 @@ const imgSena = document.querySelector(".bio-image-Sena");
 const imgLanz = document.querySelector(".bio-image-Lanz");
 const imgEuine = document.querySelector(".bio-image-Euine");
 const imgTaion = document.querySelector(".bio-image-Taion");
+
 
 const imgZ = document.querySelector(".bio-image-Z");
 const imgN = document.querySelector(".bio-image-N");
@@ -65,6 +34,40 @@ const MBIO = document.querySelector(".bio-M");
 const JBIO = document.querySelector(".bio-J");
 const XBIO = document.querySelector(".bio-X");
 const YBIO = document.querySelector(".bio-Y");
+
+//set initial state of menu
+let showMenu = false;
+menuBtn.addEventListener("click", toggleMenu);
+
+//music
+
+let offseer = new Audio("./music/Off-seer.mp3");
+let LifeSentOn = new Audio("./music/A-life-sent-on.mp3");
+let WeightOfLife = new Audio("./music/The-Weight-of-life.mp3");
+
+const playoffseer = document.querySelector(".play-off-seer");
+const playAlifesenton = document.querySelector(".life-sent-on");
+const playweightlife = document.querySelector(".weigth-of-life");
+
+playoffseer.addEventListener("click",()=>{
+    offseer.play();
+    LifeSentOn.pause();
+    WeightOfLife.pause();
+});
+playAlifesenton.addEventListener("click",()=>{
+    LifeSentOn.play();
+    offseer.pause();
+    WeightOfLife.pause();
+});
+playweightlife.addEventListener("click",()=>{
+    WeightOfLife.play();
+    LifeSentOn.pause();
+    offseer.pause();
+});
+
+
+
+
 
 
 //function
