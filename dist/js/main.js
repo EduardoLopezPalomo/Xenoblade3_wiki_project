@@ -43,7 +43,7 @@ menuBtn.addEventListener("click", toggleMenu);
 
 let offseer = new Audio("./music/Off-seer.mp3");
 let LifeSentOn = new Audio("./music/A-life-sent-on.mp3");
-let WeightOfLife = new Audio("./music/The-Weight-of-life.mp3");
+let WeightOfLife = new Audio("./music/The-weight-of-life.mp3");
 
 const playoffseer = document.querySelector(".play-off-seer");
 const playAlifesenton = document.querySelector(".life-sent-on");
@@ -53,17 +53,17 @@ playoffseer.addEventListener("click",()=>{
     offseer.play();
     LifeSentOn.pause();
     WeightOfLife.pause();
-});
+})
 playAlifesenton.addEventListener("click",()=>{
     LifeSentOn.play();
     offseer.pause();
     WeightOfLife.pause();
-});
+})
 playweightlife.addEventListener("click",()=>{
     WeightOfLife.play();
     LifeSentOn.pause();
     offseer.pause();
-});
+})
 
 
 
@@ -71,19 +71,19 @@ playweightlife.addEventListener("click",()=>{
 
 
 //function
-imgNoah.addEventListener("click",BioCharacterNoah);
-imgMio.addEventListener("click",BioCharacterMio);
-imgSena.addEventListener("click",BioCharacterSena);
-imgLanz.addEventListener("click",BioCharacterLanz);
-imgEuine.addEventListener("click",BioCharacterEuine);
-imgTaion.addEventListener("click",BioCharacterTaion);
+imgNoah.addEventListener("click",BioCharacterNoah)
+imgMio.addEventListener("click",BioCharacterMio)
+imgSena.addEventListener("click",BioCharacterSena)
+imgLanz.addEventListener("click",BioCharacterLanz)
+imgEuine.addEventListener("click",BioCharacterEuine)
+imgTaion.addEventListener("click",BioCharacterTaion)
 
-imgZ.addEventListener("click", BioCharacterZ);
-imgN.addEventListener("click",BioCharacterN);
-imgM.addEventListener("click",BioCharacterM);
-imgJ.addEventListener("click",BioCharacterJ);
-imgX.addEventListener("click",BioCharacterX);
-imgY.addEventListener("click",BioCharacterY);
+imgZ.addEventListener("click", BioCharacterZ)
+imgN.addEventListener("click",BioCharacterN)
+imgM.addEventListener("click",BioCharacterM)
+imgJ.addEventListener("click",BioCharacterJ)
+imgX.addEventListener("click",BioCharacterX)
+imgY.addEventListener("click",BioCharacterY)
 
 function toggleMenu(){
     if(!showMenu){
