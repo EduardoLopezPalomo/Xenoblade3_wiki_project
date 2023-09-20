@@ -38,12 +38,13 @@ playweightlife.addEventListener("click",()=>{
 
 
 //select img of characters
-const imgNoah = document.querySelector(".bio-image-Noah");
-const imgMio = document.querySelector(".bio-image-Mio");
-const imgSena = document.querySelector(".bio-image-Sena");
 const imgLanz = document.querySelector(".bio-image-Lanz");
 const imgEuine = document.querySelector(".bio-image-Euine");
 const imgTaion = document.querySelector(".bio-image-Taion");
+const imgNoah = document.querySelector(".bio-image-Noah");
+const imgMio = document.querySelector(".bio-image-Mio");
+const imgSena = document.querySelector(".bio-image-Sena");
+
 
 const imgZ = document.querySelector(".bio-image-Z");
 const imgN = document.querySelector(".bio-image-N");
