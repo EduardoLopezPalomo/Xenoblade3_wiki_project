@@ -23,17 +23,17 @@ playoffseer.addEventListener("click",()=>{
     offseer.play();
     LifeSentOn.pause();
     WeightOfLife.pause();
-})
+});
 playAlifesenton.addEventListener("click",()=>{
     LifeSentOn.play();
     offseer.pause();
     WeightOfLife.pause();
-})
+});
 playweightlife.addEventListener("click",()=>{
     WeightOfLife.play();
     LifeSentOn.pause();
     offseer.pause();
-})
+});
 
 
 
