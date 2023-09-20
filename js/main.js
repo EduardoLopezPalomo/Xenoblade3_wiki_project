@@ -5,6 +5,36 @@ const menuNav = document.querySelector(".menu-nav");
 const menubranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 
+//select img of characters
+const imgNoah = document.querySelector(".bio-image-Noah");
+const imgMio = document.querySelector(".bio-image-Mio");
+const imgSena = document.querySelector(".bio-image-Sena");
+const imgLanz = document.querySelector(".bio-image-Lanz");
+const imgEuine = document.querySelector(".bio-image-Euine");
+const imgTaion = document.querySelector(".bio-image-Taion");
+
+
+const imgZ = document.querySelector(".bio-image-Z");
+const imgN = document.querySelector(".bio-image-N");
+const imgM = document.querySelector(".bio-image-M");
+const imgJ = document.querySelector(".bio-image-J");
+const imgX = document.querySelector(".bio-image-X");
+const imgY = document.querySelector(".bio-image-Y");
+//select bio of characters
+const NoahBio = document.querySelector(".bio-Noah");
+const MioBio = document.querySelector(".bio-Mio");
+const SenaBio = document.querySelector(".bio-Sena");
+const LanzBio = document.querySelector(".bio-Lanz");
+const EuineBio = document.querySelector(".bio-Euine");
+const TaionBio = document.querySelector(".bio-Taion");
+
+const ZBIO = document.querySelector(".bio-Z");
+const NBIO = document.querySelector(".bio-N");
+const MBIO = document.querySelector(".bio-M");
+const JBIO = document.querySelector(".bio-J");
+const XBIO = document.querySelector(".bio-X");
+const YBIO = document.querySelector(".bio-Y");
+
 //set initial state of menu
 let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
@@ -37,46 +67,11 @@ playweightlife.addEventListener("click",()=>{
 
 
 
-//select img of characters
-const imgNoah = document.querySelector(".bio-image-Noah");
-const imgMio = document.querySelector(".bio-image-Mio");
-const imgSena = document.querySelector(".bio-image-Sena");
-const imgLanz = document.querySelector(".bio-image-Lanz");
-const imgEuine = document.querySelector(".bio-image-Euine");
-const imgTaion = document.querySelector(".bio-image-Taion");
 
-
-const imgZ = document.querySelector(".bio-image-Z");
-const imgN = document.querySelector(".bio-image-N");
-const imgM = document.querySelector(".bio-image-M");
-const imgJ = document.querySelector(".bio-image-J");
-const imgX = document.querySelector(".bio-image-X");
-const imgY = document.querySelector(".bio-image-Y");
-//select bio of characters
-const NoahBio = document.querySelector(".bio-Noah");
-const MioBio = document.querySelector(".bio-Mio");
-const SenaBio = document.querySelector(".bio-Sena");
-const LanzBio = document.querySelector(".bio-Lanz");
-const EuineBio = document.querySelector(".bio-Euine");
-const TaionBio = document.querySelector(".bio-Taion");
-
-const ZBIO = document.querySelector(".bio-Z");
-const NBIO = document.querySelector(".bio-N");
-const MBIO = document.querySelector(".bio-M");
-const JBIO = document.querySelector(".bio-J");
-const XBIO = document.querySelector(".bio-X");
-const YBIO = document.querySelector(".bio-Y");
 
 
 //function
-imgNoah.addEventListener("click",()=>{
-    NoahBio.classList.remove("hide");
-    MioBio.classList.add("hide");
-    SenaBio.classList.add("hide");
-    LanzBio.classList.add("hide");
-    EuineBio.classList.add("hide");
-    TaionBio.classList.add("hide");
-});
+imgNoah.addEventListener("click",BioCharacterNoah);
 imgMio.addEventListener("click",BioCharacterMio);
 imgSena.addEventListener("click",BioCharacterSena);
 imgLanz.addEventListener("click",BioCharacterLanz);
@@ -112,6 +107,14 @@ function toggleMenu(){
 }
 
 // heroes
+function BioCharacterNoah(){
+    NoahBio.classList.remove("hide");
+    MioBio.classList.add("hide");
+    SenaBio.classList.add("hide");
+    LanzBio.classList.add("hide");
+    EuineBio.classList.add("hide");
+    TaionBio.classList.add("hide");
+}
 function BioCharacterMio(){
     NoahBio.classList.add("hide");
     MioBio.classList.remove("hide");
