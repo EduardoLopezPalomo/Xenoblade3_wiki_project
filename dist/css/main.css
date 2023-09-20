@@ -370,44 +370,47 @@ section img:hover {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
-  /* line 244, scss/main.scss */
+  /* line 243, scss/main.scss */
+  .music-info i {
+    padding: 1.5rem; }
+  /* line 247, scss/main.scss */
   .music-info div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 1.5s ease-out; }
-    /* line 251, scss/main.scss */
+    /* line 254, scss/main.scss */
     .music-info div:hover {
       padding: 0.5rem 1.5rem;
       background: #f5001d;
       color: #000; }
-      /* line 255, scss/main.scss */
+      /* line 258, scss/main.scss */
       .music-info div:hover span {
         color: #000; }
 
-/* line 264, scss/main.scss */
+/* line 267, scss/main.scss */
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  /* line 269, scss/main.scss */
+  /* line 272, scss/main.scss */
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #f5001d;
     color: #000; }
 
-/* line 275, scss/main.scss */
+/* line 278, scss/main.scss */
 .btn-dark {
   background: black;
   color: #fff; }
 
-/* line 281, scss/main.scss */
+/* line 284, scss/main.scss */
 .btn-light {
   background: #73a2d0;
   color: #333; }
 
-/* line 287, scss/main.scss */
+/* line 290, scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;
