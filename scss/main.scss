@@ -27,6 +27,10 @@ h3{
     &.lg-heading{
         font-size: 6rem;
     }
+    &.md-heading{
+        font-size: 4rem;
+        color: $secondary-color;
+    }
     &.sm-headings{
         font-size: 2rem;
     }
@@ -83,48 +87,48 @@ main{
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-    "bioimage bio";
+    "bioimage bioimage1"
+    "bio bio1"
+    "bioimage2 bioimage3"
+    "bio2 bio3"
+    "bioimage4 bioimage5"
+    "bio4 bio5";
     grid-template-columns: repeat(2,1fr);
     .bio-Noah{
         grid-area: bio;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-Mio{
-        grid-area: bio;
+        grid-area: bio1;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-Sena{
-        grid-area: bio;
+        grid-area: bio2;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-Lanz{
-        grid-area: bio;
+        grid-area: bio3;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-Euine{
-        grid-area: bio;
+        grid-area: bio4;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-Taion{
-        grid-area: bio;
+        grid-area: bio5;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
+    }
+    img{
+        width: 50%;
+        border: 3px #fff solid;
+        width: 250px;
+        height: 250px;
+        margin-left: 12rem;
+
+        &:hover{
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
         }
     }
 }
@@ -133,72 +137,55 @@ main{
 .villains-info {
     margin-top: 100px;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 100px;
     grid-template-areas:
-    "bio bioimage";
+    "bioimage bioimage1"
+    "bio bio1"
+    "bioimage2 bioimage3"
+    "bio2 bio3"
+    "bioimage4 bioimage5"
+    "bio4 bio5";
     grid-template-columns: repeat(2,1fr);
     .bio-Z{
         grid-area: bio;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-N{
-        grid-area: bio;
+        grid-area: bio1;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-M{
-        grid-area: bio;
+        grid-area: bio2;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-J{
-        grid-area: bio;
+        grid-area: bio3;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-X{
-        grid-area: bio;
+        grid-area: bio4;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
-        }
     }
     .bio-Y{
-        grid-area: bio;
+        grid-area: bio5;
         font-size: 1.5rem;
-        &.hide{
-            opacity: 0;
+    }
+    img{
+        width: 50%;
+        border: 3px #fff solid;
+        width: 250px;
+        height: 250px;
+        margin-left: 12rem;
+
+        &:hover{
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
         }
     }
 }
 
-section{
-    display: flex;
-    height: 500px;
-    width: 650px;
-}
-section img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 0.8;
-    transition: 0.5s ease;
-}
-section img:hover{
-    cursor: crosshair;
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
+
 
 //locations
 .locations-info{
