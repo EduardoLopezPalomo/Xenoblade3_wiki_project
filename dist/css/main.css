@@ -432,27 +432,31 @@ main {
       width: 150px;
       height: 150px; }
   /* line 50, scss/_mobile.scss */
+  .region-info {
+    grid-template-areas: "image" "bio";
+    grid-template-columns: 1fr; }
+  /* line 57, scss/_mobile.scss */
   .caracters-info {
     grid-template-areas: "bioimage" "bio" "bioimage1" "bio1" "bioimage2" "bio2" "bioimage3" "bio3" "bioimage4" "bio4" "bioimage5" "bio5";
     grid-template-columns: 1fr; }
-    /* line 65, scss/_mobile.scss */
+    /* line 72, scss/_mobile.scss */
     .caracters-info img {
       margin-left: 4rem; }
-  /* line 69, scss/_mobile.scss */
+  /* line 76, scss/_mobile.scss */
   .villains-info {
     grid-template-areas: "bioimage" "bio" "bioimage1" "bio1" "bioimage2" "bio2" "bioimage3" "bio3" "bioimage4" "bio4" "bioimage5" "bio5";
     grid-template-columns: 1fr; }
-    /* line 84, scss/_mobile.scss */
+    /* line 91, scss/_mobile.scss */
     .villains-info img {
       margin-left: 4rem; }
-  /* line 88, scss/_mobile.scss */
+  /* line 95, scss/_mobile.scss */
   .locations-info {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  /* line 94, scss/_mobile.scss */
+  /* line 101, scss/_mobile.scss */
   main#home h1 {
     margin-top: 10vh; }
-  /* line 97, scss/_mobile.scss */
+  /* line 104, scss/_mobile.scss */
   .locations-info {
     grid-template-columns: 1fr; } }
