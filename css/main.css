@@ -433,16 +433,26 @@ main {
       height: 150px; }
   /* line 50, scss/_mobile.scss */
   .caracters-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "bioimage1" "bio1" "bioimage2" "bio2" "bioimage3" "bio3" "bioimage4" "bio4" "bioimage5" "bio5";
     grid-template-columns: 1fr; }
-  /* line 59, scss/_mobile.scss */
+    /* line 65, scss/_mobile.scss */
+    .caracters-info img {
+      margin-left: 4rem; }
+  /* line 69, scss/_mobile.scss */
+  .villains-info {
+    grid-template-areas: "bioimage" "bio" "bioimage1" "bio1" "bioimage2" "bio2" "bioimage3" "bio3" "bioimage4" "bio4" "bioimage5" "bio5";
+    grid-template-columns: 1fr; }
+    /* line 84, scss/_mobile.scss */
+    .villains-info img {
+      margin-left: 4rem; }
+  /* line 88, scss/_mobile.scss */
   .locations-info {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  /* line 65, scss/_mobile.scss */
+  /* line 94, scss/_mobile.scss */
   main#home h1 {
     margin-top: 10vh; }
-  /* line 68, scss/_mobile.scss */
+  /* line 97, scss/_mobile.scss */
   .locations-info {
     grid-template-columns: 1fr; } }
